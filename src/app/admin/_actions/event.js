@@ -198,11 +198,11 @@ export async function deleteEvent(id) {
 
   event.images.forEach(async (image) => {
     await fs.unlink(path.join(process.cwd(), 'public', image.url));
-    await db.eventImage.delete({
-      where: {
-        id: image.id,
-      },
-    });
+    // await db.eventImage.delete({
+    //   where: {
+    //     id: image.id,
+    //   },
+    // });
   });
 }
 

@@ -40,7 +40,7 @@ export default function ContactForm() {
           </span>
         )}
       </div>
-      <button className="px-6 bg-red-500 rounded-sm text-white text-sm sm:text-base">
+      <button className="py-2 sm:py-1 px-6 bg-red-500 rounded-sm text-white text-sm sm:text-base">
         Continue
       </button>
     </form>
